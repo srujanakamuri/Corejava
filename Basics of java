@@ -9,3 +9,29 @@ a handled prototype(*7) shows oak code running on custom hardware
 "oak" is already trademarked; java is publicly announced is may 1995
 1996-JDK 1.0
 First official release (January 1996)-jqva goeas mainstream 
+
+HOW JAVA Evolved:
+Java 1.0 -1996 January: jvm core libraries,applets,"WORA"
+java 5 - sep 2004: Generics, annotations, enums,enhance for-loops
+Java 8 - Mar 2014: lambda, streamA,API,new data/time API
+java11- sep 2018: First LTS of the 6-Months era; standard HTTP client 
+java 17- sep 2021: records ,seared,classes,text blocks, spring boot 3/4 baseline 
+java 21-sep 2025: virtual threads , Pattern matching for switch, record patterns 
+java 25- sep 2025:compact source files,scoped,values, compact object headers 
+
+Numerical Data types:
+•int
+•byte
+•short
+•double
+•long
+•float
+String Data types:
+• string 
+• char
+Boolean dat type:
+  • true 
+  • false 
+Variables cannot be created:
+ variable name should bot start with numbers, underscores,or any other special characters 
+  syntax: datatype variablename = value;
