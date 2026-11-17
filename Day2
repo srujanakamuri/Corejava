@@ -1,0 +1,15 @@
+Conditional statements,Grouping Statements
+Control Statements:
+------------------
+ * divided into three statements
+   ->conditional -  if
+                   ifelse
+                   elseif ladder
+                   nestedif
+                   switch
+   ->looping     - for
+                   while
+                   Dowhile
+   ->jumping     - continue
+                    break
+                    return
