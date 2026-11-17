@@ -13,3 +13,7 @@ Control Statements:
    ->jumping     - continue
                     break
                     return
+   Syntax:
+       if condition{
+                    // block of code
+                    }
