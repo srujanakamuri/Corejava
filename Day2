@@ -183,6 +183,82 @@ public class switchcase{
     }
 }
 ----------------------------------------------------------------------
+Ex :Mits branch code:
+import java.util.*;
+public class switchcase{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a branch:");
+        int branch=sc.nextInt();
+        switch(branch){
+            case 1:
+                System.out.println("CSE");
+                break;
+            case 2:
+                 System.out.println("ECE");
+                  break;
+            case 3:
+                System.out.println("EEE");
+                break;
+            case 4:
+                System.out.println("MECH");
+                break;
+            case 5:
+                System.out.println("CIVIL");
+                break;
+            case 6:
+                System.out.println("AI");
+                break;
+            case 7:
+                System.out.println("AI & DS");
+                break;
+            case 8:
+                System.out.println("AI & ML");
+                break;
+            case 9:
+                System.out.println("Cyber Security");
+                break;
+            case 10:
+                System.out.println("MTECH");
+                break;
+            default:
+                System.out.println("Invalid Branch");
+
+        }
+    }
+}
+---------------------------------------------------------------------------
+calculator Ex:
+---------------------------------------------------------------------------
+import java.util.*;
+public class switchcase{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a first number:");
+        int a=sc.nextInt();
+        System.out.println("Enter a second number:");
+        int b=sc.nextInt();
+        System.out.println("Enter a operator:");
+        char operator=sc.next().charAt(0);
+        switch(operator){
+            case '+':
+                System.out.println("a+b : " +(a+b));
+                break;
+            case '-':
+                 System.out.println("a-b :"+(a-b));
+                  break;
+            case '*':
+                System.out.println("a*b : "+(a*b));
+                break;
+            case '/':
+                System.out.println("a/b : "+(a/(double)b));
+                break;
+            default:
+                System.out.println("Invalid operator");
+        }
+    }
+}
+------------------------------------------------------------------
 
 
          
