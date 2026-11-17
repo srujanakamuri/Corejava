@@ -35,3 +35,22 @@ Boolean dat type:
 Variables cannot be created:
  variable name should bot start with numbers, underscores,or any other special characters 
   syntax: datatype variablename = value;
+ Variables:
+->cannot start with number
+->Must start with letter ,underscore(_),dollar($)
+->cannot start with a number
+->spaces are not allowed in variable names
+->Java keywords cannot used as a variable names 
+->variable names are case sensitive
+->special characters are not allowed especially ($,_)
+
+METHOD EXPLANATION
+SCANNER METHOD              EXAMPLE                RETURN TYPE
+nextInt()                   25                     int
+nextLong()                  9876543210L            long
+nextFloat()                 85.5f                  float
+nextDouble()                25000.75               double
+next()                      yamini                 String
+nextLine()                  Hello Java             String
+next().charAt(0)            A                      char
+nextBoolean()               true                   boolean
