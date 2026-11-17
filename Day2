@@ -276,6 +276,271 @@ public class forloop{
     }
 }
 -------------------------------------------------------------------
+2027 Calendar code:
+-------------------------------------------------------------------------------
+public class calendar {
+    public static void main(String[] args) {
+        int month = 1;
+        int days = 0;
+        int startDay = 5;
+        while (month <= 12) {
+            switch(month) {
+                case 1: 
+                    days = 31; 
+                    break;
+                case 2: 
+                    days = 28; 
+                    break;
+                case 3: 
+                    days = 31; 
+                    break;
+                case 4: 
+                    days = 30; 
+                    break;
+                case 5: 
+                    days = 31; 
+                    break;
+                case 6: 
+                    days = 30; 
+                    break;
+                case 7: 
+                    days = 31; 
+                    break;
+                case 8: 
+                    days = 31; 
+                    break;
+                case 9: 
+                    days = 30; 
+                    break;
+                case 10: 
+                    days = 31; 
+                    break;
+                case 11: 
+                    days = 30; 
+                    break;
+                case 12: 
+                    days = 31; 
+                    break;
+            }
+            switch (month) {
+                case 1: 
+                System.out.println("\n       JANUARY 2027"); 
+                    break;
+                case 2: 
+                    System.out.println("\n      FEBRUARY 2027"); 
+                    break;
+                case 3: 
+                    System.out.println("\n        MARCH 2027"); 
+                    break;
+                case 4: 
+                    System.out.println("\n        APRIL 2027"); 
+                    break;
+                case 5: 
+                    System.out.println("\n         MAY 2027"); 
+                    break;
+                case 6: 
+                    System.out.println("\n         JUNE 2027"); 
+                    break;
+                case 7: 
+                    System.out.println("\n         JULY 2027"); 
+                    break;
+                case 8: 
+                    System.out.println("\n        AUGUST 2027"); 
+                    break;
+                case 9: 
+                    System.out.println("\n      SEPTEMBER 2027"); 
+                    break;
+                case 10: 
+                    System.out.println("\n       OCTOBER 2027"); 
+                    break;
+                case 11: 
+                    System.out.println("\n      NOVEMBER 2027"); 
+                    break;
+                case 12: 
+                    System.out.println("\n      DECEMBER 2027"); 
+                    break;
+            }
+            System.out.println("Sun Mon Tue Wed Thu Fri Sat");
+            switch (startDay) {
+                case 0: 
+                    break;
+                case 1: 
+                    System.out.print("    "); 
+                    break;
+                case 2: 
+                    System.out.print("        "); 
+                    break;
+                case 3: 
+                    System.out.print("            "); 
+                    break;
+                case 4: 
+                    System.out.print("                "); 
+                    break;
+                case 5: 
+                    System.out.print("                    "); 
+                case 6: System.out.print("                        "); break;
+            }
+            int day = 1;
+            while (day <= days) {
+                System.out.printf("%3d ", day);
+                if ((startDay + day) % 7 == 0) {
+                    System.out.println();
+                }
+                day++;
+            }
+            System.out.println();
+            startDay = (startDay + days) % 7;
+            month++;
+        }
+    }
+}
+-----------------------------------------------------------------------------------------
+Table Ex: innerloop
+----------------------------------------------------------------------------------------
+public class innerloop{
+    public static void main(String[] args){
+        for(int i=1;i<=40;i++){
+            System.out.println("Multiplication Table of "+i);
+            System.out.println(i + "Table is starting");
+            for(int j=1;j<=10;j++){
+                System.out.println(i+"x"+j+"="+(i*j));
+        
+            }
+            System.out.println(i + "Table is ended");
+        }
+    }
+-----------------------------------------------------------------------------------------
+evenoddtable code:
+----------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class evenoddtable {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Even Tables");
+        System.out.println("2. Odd Tables");
+        System.out.println("Enter your choice:");
+        int choice = sc.nextInt();
+        if(choice == 1) {
+            System.out.println("Even Multiplication Tables");
+            for(int i = 2; i <= 40; i += 2) {
+                System.out.println("\nMultiplication Table of " + i);
+                for(int j = 1; j <= 10; j++) {
+                    System.out.println(i + " x " + j + " = " + (i * j));
+                }
+            }
+        } else if(choice == 2) {
+            System.out.println("Odd Multiplication Tables");
+            for(int i = 1; i <= 40; i += 2) {
+                System.out.println("\nMultiplication Table of " + i);
+                for(int j = 1; j <= 10; j++) {
+                    System.out.println(i + " x " + j + " = " + (i * j));
+                }
+            }
+        } else {
+            System.out.println("Invalid Choice");
+        }
+        sc.close();
+    }
+}
+-------------------------------------------------------------------------------------------
+Stars Ex:                                                   o/p:  *****                                                                
+public class stars{                                               *****
+    public static void main(String[] args){                       *****
+        int n=0;                                                  *****
+        for(int i=1;i<=5;i++){                                    *****
+            for(int j=1;j<=5;j++){                                Total number of stars :25
+                System.out.print("*");
+                n++;
+            }
+            System.out.println("");
+        }
+        System.out.println("Total number of stars :"+n);
+    }
+}
+----------------------------------------------------------------------------------------------
+Stars2 Ex:                                                          0/p: *
+  public class stars{                                                    **
+  public static void main(String[] args){                                ***
+ public static void main(String[] args){                                 ****
+        int n=0;                                                         *****
+        for(int i=1;i<=5;i++){                                            Total number of stars :15
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+                n++;
+            }
+            System.out.println("");
+        }
+        System.out.println("Total number of stars :"+n);
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+star2 -inverse Ex:                                   o/p: *****
+public class stars{                                       ****
+    public static void main(String[] args){               ***
+        int n=0;                                          **
+        for(int i=1;i<=5;i++){                            *
+            for(int j=5;j>=i;j--){
+                System.out.print("*");
+                n++;
+            }
+            System.out.println("");
+        }
+        System.out.println("Total number of stars :"+n);
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+WHILE LOOP SYNTAX:
+--------------------
+initialization;
+while(condition) {
+    // Statements
+    increment/decrement;
+}
+Tablecode Ex:
+---------------------------------------------------------------------
+import java.util.Scanner;
+public class whiletable {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+        int i = 1;
+       while(i<=10){
+            System.out.println(n + " x " + i + " = " + (n * i));
+            i++;
+        }
+        sc.close();
+    }
+}
+------------------------------------------------------------------------------
+DO-WHILE LOOP SYNTAX:
+--------------------
+initialization;
+do {
+    // Statements
+    increment/decrement;
+} while(condition);
+-------------------------
+dowhile ex:
+------------------------------------------------------------------------
+import java.util.Scanner;
+public class whiletable {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+        int i = 1;
+       do{
+            System.out.println(n + " x " + i + " = " + (n * i));
+            i++;
+        }
+        while(i<=10);
+        sc.close();
+    }
+}
+---------------------------------------------------------------------------
+
+
 
 
 
