@@ -267,7 +267,6 @@ for(initialization; condition; increment/decrement) {
 ----------------------------------------------------------
 Ex:
 -------------------------------------------------------------------
-import java.util.*;
 public class forloop{
     public static void main(String[] args){
     int num=10;
