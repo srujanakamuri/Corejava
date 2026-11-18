@@ -1,0 +1,50 @@
+String Methods:
+---------------
+#length(): Returns the number of chaarcters in a string
+--java
+String s="java";
+System.out.println(s.length());
+O/p: '4'
+#charAt(): Returns the character at a specified index.
+--java
+String s='java';
+System.out.println(s.charAt(i));
+o/p: 'a'
+# .toUpperCase(): converts all characters into uppercase
+--java
+String s="java";
+System.out.println(s.toUpperCase());
+o/p:"JAVA"
+# .toLowerCase(): coverts all characters into lowercase
+--java:
+String s="JAVA";
+System.out.println(s.toLowerCase());
+o/p: 'java'
+# .equals()
+Compare two strings based on their
+# .equalsIgnoreCase(): compares Strings without considering uppercase or lowercase differences.
+--java
+String a="JAVA";
+String b="java";
+System.out.println(a.equalsIgnoreCase(b));
+o/p: 'true'
+# .contains() : checks whether a string containa a particular sequence of characters.
+--java
+String s="Java Programming";
+System.out.pritnln(s.conatins("Java"));
+o/p: true
+# .substring() : Extracts a part of a string
+--java
+String s="Programming";
+System.out.println(s.substring(0,4));
+o/p : 'Prog'
+# .replace() : Replaces characters or character sequences.
+--java
+String s="Java";
+System.out.println(s.replace('a','0'));
+o/p: 'Jovo'
+# .trim() : Removes leading and trailing spaces.
+--java
+String s="Hello";
+System.out.println(s.trim());
+o/p:"Hello"
