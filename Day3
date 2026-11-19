@@ -48,3 +48,37 @@ o/p: 'Jovo'
 String s="Hello";
 System.out.println(s.trim());
 o/p:"Hello"
+Object Oriented Programming structured Language
+----------------------------------------------------------------
+A concentratic class is a regular class used to create objects.
+->Concrete Class
+->Abstract Class
+->Final Class 
+->Static Nested class
+->Inner Class
+->Local class
+->Anonymous class
+->Enum class
+->Interface
+Access modifier:
+----------------
+Private : Accessible only within the same class
+Default
+public
+protected:Accessible within the same package
+Main Pillars of OOPs in Java
+
+OOPs stands for Object-Oriented Programming System.
+Java has four main pillars of OOPs:
+1. Encapsulation
+2. Inheritance
+3. Polymorphism
+4. Abstraction
+
+Functions in Java
+A function in Java is a block of code that performs a specific task whenever it is called.
+*No arguments and no return value
+*Arguments and no return value
+*No arguments and return value
+*Arguments and return value
+
