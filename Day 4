@@ -1,0 +1,76 @@
+Inspect -
+  length()-	Returns the length of a String
+  charAt()-	Returns a character at a given index
+  contains()-Checks whether a String contains specified text
+  isEmpty()	-Checks whether a String is empty
+  equals()-	Compares two Strings
+  getClass()-	Returns the object's class information
+  toString()-	Returns a String representation of an object
+substring() method:
+--------------------
+Purpose: Extracts a part of a String based on the given index positions.
+syntax:
+           stringName.substring(startIndex);
+           stringName.substring(startIndex, endIndex);
+code :
+           public class SubstringExample {
+         public static void main(String[] args) {
+        String name = "Srujana";
+        System.out.println(name.substring(3));
+        System.out.println(name.substring(0, 3));
+            }
+        }
+---------------------------------------------------------------
+Extract by index:
+.subString()
+.indexof()
+  Ex:
+       str="venu";
+       str.subString(0);
+       str.indexof("V");// shows the index of given input:
+=>Compare
+          .equals()
+          .compareto
+Ex:
+str.equals(str1) or ("Venu");
+str.compareTo(str1) or("vani1");
+Find: 
+str="venusu@gmail.com"
+ 1> contains():
+        str.contains("@")
+2> startsWith():
+         str.startsWith("venu")
+3> ensWith():
+          str.endsWith(".com")
+Transforms:
+          str="venu"
+1> Trim()
+         str.trim()
+=>Transform
+1.trim()    ->str.trim()
+2.strip()   ->str.strip() 
+3.concate() ->str.concate("Hlo")or (str2)
+4.repeat()  ->str.repeat(3) 
+=>Replace
+1.replace()
+2.replaceall()
+3.replaceFirst()
+=>Split() (str="venu Vamshi")
+str.split(",") //venu,Vamshi
+=>Join
+str.join("|",str1)
+    =>toCharArray ->char[] venu="ven" toCharArray();
+=>matches() ->str="1      10"
+->str.match([0-9])
+=>formatted() //checks the input is in correct format or not
+------------------------------------------------
+class main{
+    public static void main(String[] args){
+StringBuilder obj=new StringBuilder("Hlo");
+obj.append(" Srujana");
+System.out.println(obj);
+  }
+}
+-----------------------------------------------------
+Types of class
+A concentric class is a regular class that can be used to create the projects
